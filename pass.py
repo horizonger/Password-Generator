@@ -1,9 +1,12 @@
+#modules
 import string
 import random
 
+#variable
 pass_char = string.punctuation + string.printable
+
 while True:
-    pass_len = input("Choose password length: ")
+     pass_len = input("Choose password length: ") #user chooses password size in this section
 
     if pass_len.isdigit():
         for cycle in range(int(pass_len)):
