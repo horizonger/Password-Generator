@@ -8,7 +8,9 @@ def file(out_file):
         pass_file.close()
 
 
-pass_char = string.punctuation + string.printable
+pass_char0 = string.punctuation + string.ascii_letters + string.digits
+pass_char1 = string.ascii_lowercase + string.ascii_uppercase
+pass_char = pass_char0 + pass_char1
 while True:
     pass_len = input("Choose password length: ")
 
@@ -17,8 +19,7 @@ while True:
             pass_gen = random.choice(pass_char)
             print(pass_gen, end="")
             file(pass_gen)
-        print("\n")
-
+        print(" ")
     elif not pass_len.isdigit():
         wrong_input = []
         for char in pass_len:
