@@ -4,9 +4,6 @@ import string
 import random
 
 
-
-
-
 # Variables
 pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
@@ -22,9 +19,6 @@ while True:
             password_generator_variable = random.choice(pass_char)
             print(password_generator_variable, end="")
         print(" ")
-         
-       
-      
     # this part writes incorrectly entered values to the screen
     elif not User_input.isdigit():
         wrong_input = []
