@@ -1,21 +1,34 @@
-#modules
+# This version writes data to txt file.
+# modules
 import string
 import random
 
-#variable
-pass_char = string.punctuation + string.printable
 
+
+
+
+# Variables
+pass_char0 = string.punctuation + string.ascii_letters + string.digits
+pass_char1 = string.ascii_lowercase + string.ascii_uppercase
+pass_char = pass_char0 + pass_char1
+
+# user input part
 while True:
-     pass_len = input("Choose password length: ") #user chooses password size in this section
+    User_input = input("Choose password length: ")
 
-    if pass_len.isdigit():
-        for cycle in range(int(pass_len)):
-            pass_gen = random.choice(pass_char)
-            print(pass_gen, end="")
+    # this part create password character when input value is true
+    if User_input.isdigit():
+        for password_loop in range(int(User_input)):
+            password_generator_variable = random.choice(pass_char)
+            print(password_generator_variable, end="")
         print(" ")
-    elif not pass_len.isdigit():
+         
+       
+      
+    # this part writes incorrectly entered values to the screen
+    elif not User_input.isdigit():
         wrong_input = []
-        for char in pass_len:
-            if char not in string.digits:
-                wrong_input.append(char)
-        print(f"I need integer value and you entered this value {wrong_input}")
+        for wrong_input_loop in User_input:
+            if wrong_input_loop not in string.digits:
+                wrong_input.append(wrong_input_loop)
+        print(f"I need integer value and you entered this value(s) {wrong_input}")
