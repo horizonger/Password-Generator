@@ -15,7 +15,7 @@ def file_read():
         for item in file_written:
             print(item, end=" ")
 
-## Variables
+# Variables
 pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
 pass_char = pass_char0 + pass_char1
