@@ -23,7 +23,7 @@ pass_char = pass_char0 + pass_char1
 # user input part
 while True:
     pass_len = input("""
-(IF YOU WANNA SEE OLD PASSWORDS JUST WRITE OLD PASSWORD) 
+(IF YOU WANNA SEE OLD PASSWORDS JUST WRITE OLD PASSWORDS) 
 ENTER THE PASSWORD LENGTH
 >>>>
 """)
@@ -37,7 +37,7 @@ ENTER THE PASSWORD LENGTH
         print(" ")
         file_write(new_v)
     # this part for the read old data
-    elif pass_len == "old password".lower():
+    elif pass_len == "old passwords".lower():
         file_read()
     # this part writes incorrectly entered values to the screen
     elif not pass_len.isdigit():
