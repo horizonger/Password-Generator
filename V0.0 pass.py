@@ -1,4 +1,4 @@
-# This version writes data to txt file.
+# This version writes data to txt file
 # modules
 import string
 import random
