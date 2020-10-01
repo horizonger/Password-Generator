@@ -10,9 +10,9 @@ def file_write(out_file, num):
     with open("passwords.csv", "a") as pass_file:
 
         pass_file.write("\n")
-        number = [num]
-        number2 = [" "]
-        pass_file.writelines(number + number2 + out_file)
+        user_id_number = [num]
+        n = [" "]
+        pass_file.writelines(user_id_number + n + out_file)
 
 
 # read to file part
