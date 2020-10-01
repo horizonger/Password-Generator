@@ -1,4 +1,4 @@
-#this version writes data to excel file
+#this version writes data to excel file.
 # modules
 import string
 import random
