@@ -1,4 +1,4 @@
-# This version writes data to txt file.
+# This version writes data to csv file.
 # modules
 import string
 import random
@@ -15,7 +15,7 @@ def file_write(out_file, length):
         pass_file.writelines(length_pass + length_of_pass + n + password + out_file)
 
 
-# read to file part
+# read to csv file part
 def file_read():
     with open("passwords.csv", "r") as file_written:
         for item in file_written:
