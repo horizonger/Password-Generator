@@ -2,22 +2,22 @@
 # modules
 import string
 import random
-import csv
 
 
 # write to csv  file part
-def file_write(out_file, num):
+def file_write(out_file, length):
     with open("passwords.csv", "a") as pass_file:
-
         pass_file.write("\n")
-        user_id_number = [num]
+        length_of_pass = [length]
+        length_pass = ["length of password : "]
+        password = ["password : "]
         n = [" "]
-        pass_file.writelines(user_id_number + n + out_file)
+        pass_file.writelines(length_pass + length_of_pass + n + password + out_file)
 
 
 # read to file part
 def file_read():
-    with open("passwords.txt", "r") as file_written:
+    with open("passwords.csv", "r") as file_written:
         for item in file_written:
             print(item, end=" ")
 
@@ -46,6 +46,8 @@ ENTER THE PASSWORD LENGTH
     # this part for the read old data
     elif pass_len == "old passwords".lower():
         file_read()
+    elif pass_len != "old passwords".lower():
+        print(f"you should write old passwords not {pass_len}")
     # this part writes incorrectly entered values to the screen
     elif not pass_len.isdigit():
         wrong_input = []
@@ -53,3 +55,4 @@ ENTER THE PASSWORD LENGTH
             if char not in string.digits:
                 wrong_input.append(char)
         print(f"I need integer value and you entered this value {wrong_input}")
+
