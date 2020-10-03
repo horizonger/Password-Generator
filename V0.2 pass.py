@@ -4,6 +4,9 @@ import string
 import random
 import xlsxwriter
 
+# I just wanted to do it this way.
+# I know there are a lot of solution for this shit.
+
 #write to excel file part
 def file(out_file):
     out_x = xlsxwriter.Workbook("password.xlsx")
