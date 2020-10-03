@@ -3,6 +3,9 @@
 import string
 import random
 
+# I just wanted to do it this way.
+# I know there are a lot of solution for this 
+
 
 # write to csv  file part
 def file_write(out_file, length):
