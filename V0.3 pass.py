@@ -1,3 +1,8 @@
+# I just wanted to do it this way.
+# I know there are a lot of solution for this 
+
+
+
 # This version writes data to txt file
 # modules
 import string
