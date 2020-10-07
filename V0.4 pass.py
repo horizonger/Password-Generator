@@ -1,5 +1,5 @@
 # This version writes data to csv file.
-# modules
+# modules.
 import string
 import random
 
