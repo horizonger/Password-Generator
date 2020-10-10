@@ -43,7 +43,6 @@ now  enter the password length
             print(f"{pass_gen}", end="")
             new_v.append(pass_gen)
         print(" ")
-
         file_write(new_v, reason)
     # this part writes incorrectly entered values to the screen
     elif not pass_len.isdigit():
