@@ -17,14 +17,8 @@ def file_write(out_file, name):
         pass_file.writelines(name + n)
         pass_file.writelines(password + out_file)
 
-
-# read to csv file part
-def file_read():
-    with open("passwords.csv", "r") as file_written:
-        for item in file_written:
-            print(item, end=" ")
-
-
+        
+        
 # Variables
 pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
