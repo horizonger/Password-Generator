@@ -5,7 +5,7 @@ import random
 
 
 # Variables
-# I just wanted to do it this way.
+# I just wanted to do it this way..
 # I know there are a lot of solution for this variables.
 pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
