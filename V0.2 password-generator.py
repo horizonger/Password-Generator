@@ -1,4 +1,4 @@
-#this version writes data to excel file.
+#This version can take note of passwords to the excel file
 # modules
 import string
 import random
