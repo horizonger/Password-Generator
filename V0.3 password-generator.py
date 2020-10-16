@@ -3,7 +3,7 @@
 
 
 
-# This version writes data to txt file
+#This version can take note of passwords to the text file
 # modules
 import string
 import random
