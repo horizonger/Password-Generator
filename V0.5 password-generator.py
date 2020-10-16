@@ -1,4 +1,4 @@
-# This version writes data to txt file.
+#This version can take note of passwords to the text file
 # modules.
 import string
 import random
@@ -16,7 +16,7 @@ def file_write(out_file, name):
         n = " "
         pass_file.writelines(name + n)
         pass_file.writelines(password + out_file)
-
+#This version can take note of passwords to the text file
         
         
 # Variables
