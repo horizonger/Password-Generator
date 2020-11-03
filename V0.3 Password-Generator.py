@@ -32,7 +32,7 @@ while True:
 ENTER THE PASSWORD LENGTH
 >>>>
 """)
-   # this part create password character when input value is true
+   # This part create password character when input value is true
     if pass_len.isdigit():
         new_v = []
         for cycle in range(int(pass_len)):
