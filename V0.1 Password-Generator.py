@@ -33,7 +33,7 @@ while True:
             File_variable.append(password_generator_variable)
         print(" ")
         file(File_variable)
-    # this part writes incorrectly entered values to the screen
+    # This part writes incorrectly entered values to the screen
     elif not User_input.isdigit():
         wrong_input = []
         for wrong_input_loop in User_input:
