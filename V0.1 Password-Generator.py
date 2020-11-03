@@ -24,7 +24,7 @@ pass_char = pass_char0 + pass_char1
 # User input part
 while True:
     User_input = input("Choose password length: ")
-    # this part create password character when input value is true
+    # This part create password character when input value is true
     if User_input.isdigit():
         File_variable = []
         for password_loop in range(int(User_input)):
