@@ -1,5 +1,5 @@
 #This version can take note of passwords to the text file
-# modules.
+# Modules.
 import string
 import random
 
@@ -8,7 +8,7 @@ import random
 # I know there are a lot of solution for this
 
 
-# write to csv  file part
+# Write to csv  file part
 def file_write(out_file, name):
     with open("passwords.txt", "a") as pass_file:
         pass_file.write("\n")
@@ -24,7 +24,7 @@ pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
 pass_char = pass_char0 + pass_char1
 
-# user input part
+# User input part
 while True:
     print("""
      
@@ -35,7 +35,7 @@ PLEASE FIRST WRITE "where do you want to use this password "
 now  enter the password length    
 """)
     pass_len = input(">>>>")
-    # this part create password character when input value is true
+    # This part create password character when input value is true
     if pass_len.isdigit():
         new_v = []
         for cycle in range(int(pass_len)):
