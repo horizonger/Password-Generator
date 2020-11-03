@@ -8,7 +8,7 @@ import string
 import random
 
 
-# file process part
+# File process part
 def file(out_file):
     with open("passwords.txt", "a") as password_file:
         password_file.write("\n")
