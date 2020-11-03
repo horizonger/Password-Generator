@@ -4,11 +4,11 @@
 
 
 #This version can take note of passwords to the text file
-# modules
+# Modules
 import string
 import random
 
-#write to file part
+#Write to file part
 def file_write(out_file):
     with open("passwords.txt", "a") as pass_file:
         pass_file.write("\n")
