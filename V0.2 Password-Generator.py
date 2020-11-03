@@ -7,7 +7,7 @@ import xlsxwriter
 # I just wanted to do it this way.
 # I know there are a lot of solution for this shit.
 
-#write to excel file part
+#Write to excel file part
 def file(out_file):
     out_x = xlsxwriter.Workbook("password.xlsx")
     pass_w = out_x.add_worksheet()
@@ -20,10 +20,10 @@ pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
 pass_char = pass_char0 + pass_char1
 
-# user input 
+# User input 
 pass_len = input("Choose password length: ")
 
-# this part create password character when input value is true
+# This part create password character when input value is true
 if pass_len.isdigit():
     new_v = []
     for cycle in range(int(pass_len)):
@@ -33,7 +33,7 @@ if pass_len.isdigit():
     print(" ")
     file(new_v)
  
- # this part writes incorrectly entered values to the screen
+ # This part writes incorrectly entered values to the screen
  elif not pass_len.isdigit():
     wrong_input = []
     for char in pass_len:
