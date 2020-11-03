@@ -44,7 +44,7 @@ ENTER THE PASSWORD LENGTH
     # this part for the read old data
     elif pass_len == "old passwords".lower():
         file_read()
-    # this part writes incorrectly entered values to the screen
+    # This part writes incorrectly entered values to the screen
     elif not pass_len.isdigit():
         wrong_input = []
         for char in pass_len:
