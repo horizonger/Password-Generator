@@ -41,7 +41,7 @@ ENTER THE PASSWORD LENGTH
             new_v.append(pass_gen)
         print(" ")
         file_write(new_v)
-    # this part for the read old data
+    # This part for the read old data
     elif pass_len == "old passwords".lower():
         file_read()
     # This part writes incorrectly entered values to the screen
