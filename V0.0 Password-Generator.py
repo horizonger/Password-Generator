@@ -21,7 +21,7 @@ while True:
             password_generator_variable = random.choice(pass_char)
             print(password_generator_variable, end="")
         print(" ")
-    # this part writes incorrectly entered values to the screen
+    # This part writes incorrectly entered values to the screen
     elif not User_input.isdigit():
         wrong_input = []
         for wrong_input_loop in User_input:
