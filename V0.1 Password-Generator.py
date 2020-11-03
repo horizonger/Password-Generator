@@ -3,7 +3,7 @@
 
 
 #This version can take note of passwords to the text file
-# modules
+# Modules
 import string
 import random
 
