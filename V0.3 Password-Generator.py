@@ -14,7 +14,7 @@ def file_write(out_file):
         pass_file.write("\n")
         pass_file.writelines(out_file)
 
-#read to file part
+#Read to file part
 def file_read():
     with open("passwords.txt", "r") as file_written:
         for item in file_written:
@@ -25,7 +25,7 @@ pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
 pass_char = pass_char0 + pass_char1
 
-# user input part
+# User input part
 while True:
     pass_len = input("""
 (IF YOU WANNA SEE OLD PASSWORDS JUST WRITE OLD PASSWORDS) 
