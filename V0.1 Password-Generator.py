@@ -21,7 +21,7 @@ pass_char0 = string.punctuation + string.ascii_letters + string.digits
 pass_char1 = string.ascii_lowercase + string.ascii_uppercase
 pass_char = pass_char0 + pass_char1
 
-# user input part
+# User input part
 while True:
     User_input = input("Choose password length: ")
     # this part create password character when input value is true
